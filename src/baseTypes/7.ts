@@ -14,17 +14,10 @@ enum Days {
 }
 
 function isWeekend(day: Days) {
-  if (
-    day === Days.Monday ||
-    day === Days.Tuesday ||
-    day === Days.Wednesday ||
-    day === Days.Thursday ||
-    day === Days.Friday
-  ) {
-    return false;
-  }
   if (day === Days.Saturday || day === Days.Sunday) {
     return true;
+  } else {
+    return false;
   }
 }
 
